@@ -14,6 +14,8 @@ class HomeIndex extends StatefulWidget {
 class _HomeState extends State<HomeIndex> {
   late SharedPreferences _preferences;
 
+  int selectedIndex = 0;
+
   Future<void> handelSignOut(BuildContext context) async {
     _preferences = await SharedPreferences.getInstance();
     _preferences.setBool('isAuthenticated', false);
@@ -24,7 +26,11 @@ class _HomeState extends State<HomeIndex> {
     );
   }
 
-  int selectedIndex = 0;
+  void navigateToPage(int index) {
+    setState(() {
+      selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,11 +39,7 @@ class _HomeState extends State<HomeIndex> {
       drawer: CustomDrawer(
         pages: pages,
         selectedIndex: selectedIndex,
-        onItemSelected: (index) {
-          setState(() {
-            selectedIndex = index;
-          });
-        },
+        onItemSelected: navigateToPage,
         onSignOut: () => handelSignOut(context),
       ),
       body: IndexedStack(
