@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:my_app/pages/home/index.dart';
-import 'package:my_app/pages/home/pages/contact.dart';
-import 'package:my_app/pages/home/pages/country.dart';
-import 'package:my_app/pages/home/pages/gallery.dart';
-import 'package:my_app/pages/home/pages/home.dart';
-import 'package:my_app/pages/home/pages/setting.dart';
-import 'package:my_app/pages/home/pages/weather.dart';
-import 'package:my_app/pages/signin.dart';
-import 'package:my_app/pages/signup.dart';
+import 'package:my_app/screens/home/index.dart';
+import 'package:my_app/screens/home/screens/contact.dart';
+import 'package:my_app/screens/home/screens/country.dart';
+import 'package:my_app/screens/home/screens/gallery.dart';
+import 'package:my_app/screens/home/screens/home.dart';
+import 'package:my_app/screens/home/screens/setting.dart';
+import 'package:my_app/screens/home/screens/weather.dart';
+import 'package:my_app/screens/signin.dart';
+import 'package:my_app/screens/signup.dart';
 
 Map<String, WidgetBuilder> routes = {
   '/sign-in': (context) => Signin(),
@@ -17,7 +17,7 @@ Map<String, WidgetBuilder> routes = {
   
 };
 
-/*GoRouter _router = GoRouter(
+GoRouter _router = GoRouter(
   routes: <RouteBase>[
     GoRoute(
       path: '/sign-in',
@@ -72,4 +72,4 @@ Map<String, WidgetBuilder> routes = {
       ],
     ),
   ],
-);*/
+);

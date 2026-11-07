@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/pages/home/pages/Country.dart';
 import 'package:my_app/pages/home/pages/Gallery.dart';
-import 'package:my_app/pages/home/pages/contact.dart';
-import 'package:my_app/pages/home/pages/home.dart';
-import 'package:my_app/pages/home/pages/setting.dart';
-import 'package:my_app/pages/home/pages/weather.dart';
+import 'package:my_app/screens/home/screens/contact.dart';
+import 'package:my_app/screens/home/screens/home.dart';
+import 'package:my_app/screens/home/screens/setting.dart';
+import 'package:my_app/screens/home/screens/weather.dart';
 
 class PageItem {
   final String title;

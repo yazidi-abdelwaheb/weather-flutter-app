@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/pages/home/menu.dart';
+import 'package:my_app/screens/home/menu.dart';
 
 class CustomDrawer extends StatelessWidget {
   final List<PageItem> pages;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/pages/home/index.dart';
-import 'package:my_app/pages/signin.dart';
+import 'package:my_app/screens/home/index.dart';
+import 'package:my_app/screens/signin.dart';
 import 'package:my_app/routes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'My App',
-      
+      routerConfig: _router,
       home: FutureBuilder<SharedPreferences>(
         future: SharedPreferences.getInstance(),
         builder: (context, snapshot) {

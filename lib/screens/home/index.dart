@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/UI/appbar.dart';
 import 'package:my_app/UI/drawer.dart';
-import 'package:my_app/pages/home/menu.dart';
+import 'package:my_app/screens/home/menu.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeIndex extends StatefulWidget {

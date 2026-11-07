@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/pages/home/pages/country.dart';
-import 'package:my_app/pages/home/pages/weather.dart';
+import 'package:my_app/screens/home/screens/country.dart';
+import 'package:my_app/screens/home/screens/weather.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
