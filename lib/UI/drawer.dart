@@ -20,14 +20,24 @@ class CustomDrawer extends StatelessWidget {
     return Drawer(
       child: Column(
         children: [
-          const DrawerHeader(
+          DrawerHeader(
             decoration: BoxDecoration(color: Colors.blue),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                Icon(Icons.person, size: 50, color: Colors.white),
+                Container(
+                  width: 100,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.white, width: 3),
+                    borderRadius: BorderRadius.all(Radius.circular(50)),
+                  ),
+                  child: Image(
+                    image: AssetImage("assets/avatar.png"),
+                  ),
+                ),
                 SizedBox(width: 15),
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

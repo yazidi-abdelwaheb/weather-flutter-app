@@ -24,7 +24,7 @@ class _HomeState extends State<HomeIndex> {
     );
   }
 
-  int selectedIndex = 5;
+  int selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
