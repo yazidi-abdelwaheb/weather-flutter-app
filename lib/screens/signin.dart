@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/UI/appbar.dart';
-import 'package:my_app/UI/btn.dart';
-import 'package:my_app/UI/snackBar.dart';
-import 'package:my_app/UI/txt-input.dart';
+import 'package:my_app/widgets/appbar.dart';
+import 'package:my_app/widgets/btn.dart';
+import 'package:my_app/widgets/snackBar.dart';
+import 'package:my_app/widgets/txt-input.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Signin extends StatelessWidget {

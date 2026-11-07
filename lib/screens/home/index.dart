@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/UI/appbar.dart';
-import 'package:my_app/UI/drawer.dart';
+import 'package:my_app/widgets/appbar.dart';
+import 'package:my_app/widgets/drawer.dart';
 import 'package:my_app/screens/home/menu.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
